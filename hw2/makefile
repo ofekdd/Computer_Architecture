@@ -1,6 +1,5 @@
-
-cacheSim: cacheSim.cpp
-	g++ -o cacheSim cacheSim.cpp
+cacheSim: cacheSim.cpp cacheStruct.cpp
+	g++ -o cacheSim cacheSim.cpp cacheStruct.cpp
 
 .PHONY: clean
 clean:

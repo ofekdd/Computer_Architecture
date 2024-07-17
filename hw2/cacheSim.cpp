@@ -12,12 +12,13 @@ using std::cerr;
 using std::ifstream;
 using std::stringstream;
 
+unsigned long int evictedAddressFromL2 = 0;
+bool evictionFlag = false;
 
 // Function to calculate average access time
 double avgAccTimeCalculator(const L1Cache& l1Cache, const L2Cache& l2Cache, unsigned memCyc) {
     double L1MissRate = l1Cache.hitMissCalculator();
     double L2MissRate = l2Cache.hitMissCalculator();
-
     double avgAccTime = l1Cache.getAccessTime() + (L1MissRate * (l2Cache.getAccessTime() + (L2MissRate * memCyc)));
     return avgAccTime;
 }
