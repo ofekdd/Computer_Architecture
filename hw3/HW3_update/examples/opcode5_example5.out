@@ -1,0 +1,15 @@
+Reading the opcodes latency info from opcode5.dat ... Got latency for 17 opcodes
+Reading the program file example5.in ... Found 20 instructions
+getProgDepth()==40
+getDepDepth(0)==0
+getDepDepth(1)==0
+getDepDepth(3)==0
+getDepDepth(5)==0
+getDepDepth(6)==7
+getDepDepth(7)==12
+getDepDepth(9)==7
+getInstDeps(3)=={-1,-1}
+getInstDeps(5)=={-1,-1}
+getInstDeps(6)=={-1,1}
+getInstDeps(7)=={-1,2}
+getInstDeps(9)=={-1,1}
